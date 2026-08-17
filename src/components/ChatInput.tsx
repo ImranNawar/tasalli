@@ -13,7 +13,7 @@ export default function ChatInput({ onSend, disabled, languageHint }: Props) {
 
   const canSend = value.trim().length > 0 && !disabled;
 
-  /* textarea auto-resize */
+  /* ─── textarea auto-resize ─── */
   const resize = () => {
     const el = ref.current;
     if (!el) return;
@@ -21,7 +21,7 @@ export default function ChatInput({ onSend, disabled, languageHint }: Props) {
     el.style.height = `${Math.min(el.scrollHeight, 140)}px`;
   };
 
-  /* Submit */
+  /* ─── Submit ─── */
   const submitText = () => {
     if (!canSend) return;
     onSend(value.trim());
@@ -36,7 +36,7 @@ export default function ChatInput({ onSend, disabled, languageHint }: Props) {
     }
   };
 
-  /* Reset textarea on send from outside (suggestion picks) */
+  /* ─── Reset textarea on send from outside (suggestion picks) ─── */
   useEffect(() => {
     resize();
   }, [value]);

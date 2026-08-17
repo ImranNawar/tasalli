@@ -49,7 +49,7 @@ function EmptyState({ onPick }: { onPick: (text: string) => void }) {
           What&rsquo;s on your mind?
         </h1>
         <p className="mx-auto max-w-sm text-sm leading-relaxed text-muted-foreground">
-          Tasalli is here to listen - no judgment, no rush. Say it however it
+          Tasalli is here to listen — no judgment, no rush. Say it however it
           comes to you.
         </p>
       </div>
@@ -76,7 +76,7 @@ export default function App() {
   const [authModalOpen, setAuthModalOpen] = useState(false);
   const [historyOpen, setHistoryOpen] = useState(false);
 
-  /* Conversation */
+  /* ─── Conversation ─── */
   const {
     messages,
     isStreaming,
@@ -91,11 +91,11 @@ export default function App() {
     updateUserProfile,
   } = useConversation();
 
-  /* Auth */
+  /* ─── Auth ─── */
   const { user, profile, loading: _authLoading, signIn, signUp, signOut } =
     useAuth();
 
-  /* Sync auth profile to conversation personalisation */
+  /* ─── Sync auth profile to conversation personalisation ─── */
   useEffect(() => {
     if (profile) {
       const convProfile: UserProfile = {
@@ -111,7 +111,7 @@ export default function App() {
     }
   }, [profile, updateUserProfile]);
 
-  /* History */
+  /* ─── History ─── */
   const {
     conversations,
     activeConversationId,
@@ -124,7 +124,7 @@ export default function App() {
     updateTitle,
   } = useHistory(user?.id ?? null);
 
-  /* Save conversation to Supabase */
+  /* ─── Save conversation to Supabase ─── */
   const lastSavedRef = useRef<string>("");
   useEffect(() => {
     if (!user || !activeConversationId) return;
@@ -163,7 +163,7 @@ export default function App() {
     conversations,
   ]);
 
-  /* Send handlers */
+  /* ─── Send handlers ─── */
 
   const handleSend = useCallback(
     (text: string) => {
@@ -176,7 +176,7 @@ export default function App() {
     [user, activeConversationId, createConversation, send],
   );
 
-  /* Theme / scroll */
+  /* ─── Theme / scroll ─── */
 
   const endRef = useRef<HTMLDivElement>(null);
   const streamRegionRef = useRef<HTMLDivElement>(null);
@@ -205,7 +205,7 @@ export default function App() {
   const toggleTheme = () =>
     setTheme((p) => (p === "light" ? "dark" : "light"));
 
-  /* History handlers */
+  /* ─── History handlers ─── */
 
   const handleSelectConversation = useCallback(
     async (id: string) => {
@@ -244,7 +244,7 @@ export default function App() {
     }
   }, [clearMessages, user, activeConversationId, handleNewConversation]);
 
-  /* Render */
+  /* ─── Render ─── */
 
   const lastMessage = messages[messages.length - 1];
   const shouldShowStandaloneIndicator =

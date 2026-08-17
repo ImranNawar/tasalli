@@ -4,6 +4,7 @@
 
 # Tasalli
 ### تسلی
+
 **An AI companion for emotional support**
 
 *"No one here will judge you."*
@@ -11,9 +12,7 @@
 [![Live Demo](https://img.shields.io/badge/Live_Demo-tasalli.nativelyai.app-6E8F76?style=flat-square)](https://tasalli.nativelyai.app/)
 [![Built with native.builder](https://img.shields.io/badge/Built_with-native.builder-3F7C77?style=flat-square)](https://builder.nativelyai.com/)
 [![AI Factory Hackathon 2026](https://img.shields.io/badge/AI_Factory-Hackathon_2026-C97B3C?style=flat-square)](https://lablab.ai/ai-hackathons/nativebuilder-build-without-limits/)
-[![Hackathon Submission](https://img.shields.io/badge/Hackathon-Project_Page-6E8F76?style=flat-square)](https://lablab.ai/ai-hackathons/nativebuilder-build-without-limits/anonym47/tasalli)
-[![Presentation](https://img.shields.io/badge/View-Presentation-3F7C77?style=flat-square)](https://storage.googleapis.com/lablab-static-eu/submissions/oo6q7pw88c6s8dsrti5d275d/m5dpxpttv2v60g0tdit4rne3/presentation/presentation_mccaei6x8nw8s98a37ug07ka.pdf)
- 
+
 </div>
 
 ---
@@ -24,7 +23,7 @@ Tasalli (تسلی - "solace" / "comfort" in Urdu) is a web app where someone can
 emotionally intelligent AI companion, and receive responses shaped by the
 emotional tone and specifics of what they shared. The companion feels like a mature, well-read, and emotionally grounded friend. It is warm, calm, and genuinely attentive, offering thoughtful wisdom naturally without sounding preachy or overly sympathetic.
 
-`Tasalli is a supportive companion, not a licensed therapist.`
+`Tasalli is a supportive companion, **not a licensed therapist**.`
 
 ## The problem
 
@@ -90,3 +89,12 @@ npm run build   # production build
 
 ## Disclaimer
 `Tasalli is a supportive AI companion, not a licensed therapist. If you are in crisis, please reach out to local emergency services. This disclaimer is shown in the product itself on every page.`
+
+
+## About the hackathon
+
+This project was built for **AI Factory** hackathon. The official native.builder hackathon, hosted by NativelyAI and lablab.ai.
+
+[lablab.ai/ai-hackathons/nativebuilder-build-without-limits](https://lablab.ai/ai-hackathons/nativebuilder-build-without-limits/)
+
+📅 August 3–10, 2026
